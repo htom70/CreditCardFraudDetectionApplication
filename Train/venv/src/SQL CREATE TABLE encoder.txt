@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS common_fraud.encoder
+(
+    id                      BIGINT NOT NULL AUTO_INCREMENT,
+    schema_name             VARCHAR(255),
+    table_name              VARCHAR(255),
+    field_name              VARCHAR(255),
+    encoder_object          BLOB,
+    primary key (id)
+) ENGINE = InnoDB

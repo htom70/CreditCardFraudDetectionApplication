@@ -1,0 +1,1 @@
+"INSERT INTO estimator (train_task_id, estimator_object) VALUES (%s, %s)"

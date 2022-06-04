@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS common_fraud.planned_encoding_and_encoded_table_version
+(
+    id                          BIGINT NOT NULL AUTO_INCREMENT,
+    planned_encoding_id         BIGINT,
+    encoded_table_registry_id   BIGINT,
+    FOREIGN KEY (planned_encoding_id) REFERENCES planned_encoding(id),
+    FOREIGN KEY (encoded_table_registry_id) REFERENCES encoded_table_registry(id),
+    PRIMARY KEY (id)
+) engine = InnoDB
