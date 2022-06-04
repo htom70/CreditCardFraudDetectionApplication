@@ -1,0 +1,7 @@
+create table encoder
+(
+    id                      bigint not null auto_increment,
+    encoder_name            varchar(255),
+    encoder_object          blob,
+    primary key (id)
+) engine = InnoDB
